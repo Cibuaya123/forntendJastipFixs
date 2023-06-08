@@ -1,0 +1,125 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button>
+        <img src="../../assets/menu_bar.svg" />
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <div class="center-title">
+        JASA TITIP
+      </div>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon name="log-out"></ion-icon>
+        Logout
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+ 
+  <div class="home-container">
+    <div class="banner-image">
+      <img src="assets/jastip1.jpg" alt="Banner">
+    </div>
+
+    <div class="product-list">
+      <div class="product-item" (click)="openItemDetails()">
+        <img src="assets/CK.jpg" alt="Calvin Klein" class="product-image">
+        <div class="product-details">
+          <h3>Product 1</h3>
+          <p>Calvin Klein</p>
+          <h4 class="price">
+            Rp6.000.000
+          </h4>
+          <ion-button>Buy Now</ion-button>
+        </div>
+      </div>
+      <div class="product-item" (click)="openItemDetails()">
+        <img src="assets/CK2.jpg" alt="CK" class="product-image">
+        <div class="product-details">
+          <h3>Product 2</h3>
+          <p>Calvin Klein Limited</p>
+          <h4 class="price">
+            Rp6.500.000
+          </h4>
+          <ion-button>Buy Now</ion-button>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <img src="assets/dior.jpg" alt="dior" class="product-image">
+        <div class="product-details">
+          <h3>Product 3</h3>
+          <p>Dior</p>
+          <h4 class="price">
+            Rp7.000.000
+          </h4>
+          <ion-button>Buy Now</ion-button>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="assets/dior2.jpg" alt="dior2" class="product-image">
+        <div class="product-details">
+          <h3>Product 4</h3>
+          <p>Dior Limited</p>
+          <h4 class="price">
+            Rp7.500.000
+          </h4>
+          <ion-button>Buy Now</ion-button>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="assets/hm.jpg" alt="hm" class="product-image">
+        <div class="product-details">
+          <h3>Product 5</h3>
+          <p>H&M</p>
+          <h4 class="price">
+            Rp2.000.000
+          </h4>
+          <ion-button>Buy Now</ion-button>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <img src="assets/hm2.jpg" alt="hm2" class="product-image">
+        <div class="product-details">
+          <h3>Product 6</h3>
+          <p>H&M Limited</p>
+          <h4 class="price">
+            Rp2.500.000
+          </h4>
+          <ion-button>Buy Now</ion-button>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="assets/uniqlo.jpg" alt="uniqlo" class="product-image">
+        <div class="product-details">
+          <h3>Product 7</h3>
+          <p>Uniqlo</p>
+          <h4 class="price">
+            Rp3.500.000
+          </h4>
+          <ion-button>Buy Now</ion-button>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="assets/zara.jpg" alt="uniqlo2" class="product-image">
+        <div class="product-details">
+          <h3>Product 8</h3>
+          <p>Uniqlo Limited</p>
+          <h4 class="price">
+            Rp4.000.000
+          </h4>
+          <ion-button>Buy Now</ion-button>
+        </div>
+      </div>
+      <!-- Tambahkan produk lainnya sesuai kebutuhan -->
+    </div>
+  </div>
+</ion-content>
